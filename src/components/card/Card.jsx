@@ -3,7 +3,7 @@ export default function Card(props) {
    return (
       <div className={styles.container}>
         
-            <button onClick={props.onClose}>X</button>
+            <button className={styles.cerrar} onClick={props.onClose}>X</button>
           
             <h2 className={styles.name} >{props.name}</h2>
             <img className={styles.imagen} src={props.image} alt={props.name}></img>

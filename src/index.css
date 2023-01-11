@@ -5,8 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../img/rick-and-morty-wallpaper.jpg");
-  background-size: cover;
+  background-color: rgba(178, 178, 164, 0.279);
 }
 
 code {

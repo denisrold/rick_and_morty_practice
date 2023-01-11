@@ -7,6 +7,8 @@ import characters, { Rick } from "./data.js";
 function App() {
   return (
     <div className="App" style={{ padding: "25px" }}>
+      <hr />
+      <div></div>
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <Card
           name={Rick.name}
@@ -15,9 +17,6 @@ function App() {
           image={Rick.image}
           onClose={() => window.alert("Emulamos que se cierra la card")}
         />
-      </div>
-      <hr />
-      <div>
         <Cards characters={characters} />
       </div>
       <hr />
