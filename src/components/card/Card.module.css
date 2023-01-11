@@ -6,9 +6,9 @@
     padding: 0.5rem;
     box-shadow: 5px 5px 12px 2px rgb(22, 21, 21);
     background-color:darkslategray;
+    background: linear-gradient(rgb(38, 63, 63), 25%, rgb(61, 95, 95));
     margin-top: 8px;
     transition: 0.5s;
-
     }
     .container:hover{
         scale:1.02;
@@ -17,25 +17,21 @@
         border: 3px rgb(25, 40, 40) solid;
     }
     
-.buttoncontain{
-        display: flex;
-        justify-content: flex-end;
-        background-color:darkslategray;
-        }
-        button{
+
+        button {
+        margin-left: 88%;
         margin-right: 5px;
-        margin-top: 5px;
+        margin-top: 8px;
         background-color: rgb(245, 25, 25);
         border-radius: 0.5rem;
         color: rgb(244, 242, 242);
         box-shadow: 1px 1px 3px rgb(21, 19, 19);
         opacity: 0.8;
-        scale:0.9;
+        scale:1;
         transition: 1;
         }
-        
             button:hover{
-            scale: 0.85;
+            scale: 0.9;
             opacity: 0.9;
             box-shadow: 0.5px 0.5px 1.5px rgb(21, 19, 19);
           }
@@ -55,7 +51,7 @@
 h2 {
     margin-bottom: 15px;
     margin-top: 0px;
-    font-size: 22px;
+    font-size: 24px;
     opacity:0.9;
 }
 
@@ -63,8 +59,10 @@ h2 {
 text-align: center;
 margin-left: 0px;
 margin-top: 10px;
-font-size: 24px;
+margin-bottom: 30px;
+font-size: 26px;
 opacity: 1;
+;
 }
 
 hr{
@@ -80,5 +78,6 @@ opacity: 0.4;
 .data{
     display: flex;
     justify-content: space-around;
-    background-color:darkslategray;
+    background-color:rgb(61, 95, 95);
+    border-radius: 10px;
 }
