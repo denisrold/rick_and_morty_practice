@@ -2,21 +2,18 @@ import Card from '../card/Card';
 import styles from"./Cards.module.css"
 
 
-export default function Cards({ characters }) {
-   return  <div className={styles.divs}>
-      {characters.map((element)=>{
-         return(
-           
-            <Card 
-            key = {element.id}
-            name = {element.name}
-            species = {element.species}
-            gender = {element.gender}
-            image = {element.image}
-            onClose = {() => alert('Emulamos que se cierra la card')}
-            />
-          
-         )
-      })}
+export default function Cards({ characters, onClose }) {
+   return  <div className={styles.divs}> {
+      characters.map(({id, name, species, gender, image}) => {
+        return <Card
+         key={id}
+         name={name}
+         species={species}
+         gender={gender}
+         image={image}
+         onClose={() => onClose(id)}
+        />
+      })
+   }
    </div>;
 }

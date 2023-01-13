@@ -1,21 +1,22 @@
 .container{
     cursor:pointer;
-    border: 3px rgb(19, 30, 30) solid;
+    border: 3px rgb(22, 138, 11) solid;
     border-radius: 1rem;
-    width: fit-content;
-    height: fit-content;
+    width:330px;
+    height: 500px;
     padding: 0.5rem;
     box-shadow: 5px 5px 12px 2px rgb(22, 21, 21);
     background-image: url("./rick-and-morty-wallpaper.jpg");
-  margin-right:20px ;
+    margin-right:20px ;
     margin-top: 8px;
     margin-bottom:10px;
     transition: 0.5s;
+    filter: brightness(0.97)
     }
     .container:hover{
         scale:1.02;
         box-shadow: 10px 10px 12px 2px rgb(22, 21, 21);
-        filter: brightness(1.03);
+        filter: brightness(1.04);
         border: 3px rgb(25, 40, 40) solid;
     }
     
@@ -45,8 +46,8 @@
     border-radius: 1rem;
     border: 1.7px rgba(15, 15, 15, 0.925) solid;
     border-style: inset;
-    width: 90%;
-    height: 90%;
+    width: 300px;
+    height: 300px;
     opacity: 0.95;
    
 }
@@ -55,7 +56,8 @@ h2 {
     margin-bottom: 15px;
     margin-top: 0px;
     font-size: 24px;
-    
+    margin-right:20px;
+    text-align: left;
 }
 
 .name {
@@ -85,4 +87,6 @@ opacity: 0.4;
     background-color:rgb(20, 159, 20);
     border-radius: 10px;
     opacity: 0.88;
+    height: 65px;
+    
 }

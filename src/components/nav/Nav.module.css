@@ -1,0 +1,8 @@
+.navs{
+    height: 60px;
+    border:2px blue solid ;
+    background-color: rgb(2, 77, 2);
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
