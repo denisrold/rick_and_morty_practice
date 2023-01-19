@@ -1,7 +1,12 @@
 import "./App.css";
 import Nav from "./components/nav/Nav";
 import Cards from "./components/cards/Cards.jsx";
-import { useState } from "react";
+import About from "./components/about/About";
+import Details from "./components/detail/Details";
+import Forms from "./components/forms/forms";
+import React, { useState, useEffect } from "react";
+
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -22,14 +27,38 @@ function App() {
     setCharacters(characters.filter((character) => character.id !== id));
   };
 
+  const location = useLocation();
+  //esto lo haria en una base de datos, en este caso lo estoy haciendo en forma local.
+  const navigate = useNavigate();
+  const [access, setAccess] = useState(false);
+  const username = "admin@admin.com";
+  const password = "1password";
+
+  function login(userData) {
+    if (userData.password === password && userData.username === username) {
+      setAccess(true);
+      navigate("/home");
+    }
+  }
+  useEffect(() => {
+    !access && navigate("/");
+  }, [access]);
+
   return (
     <div className="App" style={{ padding: "25px" }}>
-      <div>
-        <Nav onSearch={onSearch} />
-      </div>
+      <div>{location.pathname !== "/" && <Nav onSearch={onSearch} />}</div>
       <hr />
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-        <Cards onClose={onClose} characters={characters} />
+        <Routes>
+          <Route path="/" element={<Forms login={login} />} />
+          <Route
+            path="home"
+            element={<Cards onClose={onClose} characters={characters} />}
+          />
+
+          <Route path="About" element={<About />} />
+          <Route path="detail/:detailId" element={<Details />} />
+        </Routes>
       </div>
       <hr />
     </div>

@@ -1,0 +1,8 @@
+.forms{
+    border:2px blue solid;
+}
+
+.errors {
+color:red;
+font-style: italic;
+}
