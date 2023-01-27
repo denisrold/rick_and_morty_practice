@@ -6,10 +6,11 @@ import { Link } from"react-router-dom"
     return(
         <nav className={styles.navs}>
             <div>
-                <Link to="/">Logout</Link>
-                <Link to="about">about</Link>
-                <Link to="home">home</Link>
-                <SearchBar onSearch={onSearch} />
+                <Link to="/"     className={styles.buttonNav}>Logout</Link>
+                <Link to="about" className={styles.buttonNav}>About</Link>
+                <Link to="home"  className={styles.buttonNav}>Home</Link>
+                <Link to="favorites"  className={styles.buttonNav}>Favorites</Link>
+                <SearchBar onSearch={onSearch}/>
             </div>
         </nav>
     )

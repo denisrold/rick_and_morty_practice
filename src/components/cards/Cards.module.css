@@ -1,4 +1,5 @@
 .divs{
+border: 3px red solid;
 display: flex;
 justify-content: space-evenly;
 }

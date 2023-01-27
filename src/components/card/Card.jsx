@@ -1,13 +1,42 @@
+import React from"react"
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from"./Card.module.css"
-export default function Card(props) {
+import { connect } from 'react-redux';
+import { addFavorites, deleteFavs} from"../redux/actions"
+
+ function Card(props) {
+   const [isFav, setisFav] = React.useState(false);
+
+   const handleFavorite = () =>{
+ 
+      if(!isFav){setisFav(true);
+      props.addFavorites(props)
+      }
+
+      if(isFav){setisFav(false);
+         props.deleteFavs(props.id)
+      };
+      }
+
+   useEffect(() => {
+   props.allCharacters?.forEach((fav) => {
+   if (fav.id === props.id) {
+   setisFav(true);
+   }});
+}, [props.myFavorites]);
+
+
    return (
       <div className={styles.container}>
             <button className={styles.cerrar} onClick={props.onClose}>X</button>
-            <Link to={`/detail/${props.id}`}>
-               <h2 className={styles.name} >{props.name}</h2>
-            </Link>
+            <h2 className={styles.name} >{props.name}</h2>
             <img className={styles.imagen} src={props.image} alt={props.name}></img>
+            <Link to={`/detail/${props.id}`} className={styles.links}>
+            <button className={styles.objetivo}>Objetivo</button>
+            </Link >
+            {isFav? (<button onClick={handleFavorite} className={styles.favs}>❤️</button>) : (
+                <button onClick={handleFavorite} className={styles.favs}>🤍</button>)}
             <hr></hr>
          <div className={styles.data}>
             <h2>{props.species}</h2>
@@ -16,3 +45,24 @@ export default function Card(props) {
       </div>
    );
 }
+
+export function mapDispatchToProps(dispatch){
+return {
+   addFavorites:(id)=>{dispatch(addFavorites(id))},
+   deleteFavs:(id)=>{dispatch(deleteFavs(id))},
+}
+}
+
+export const mapStateToProps = (state)=>{
+return {myFavorites: state.myFavorites,
+   allCharacters: state.allCharacters,
+
+}  
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Card);
+
+
+
+/*
+*/

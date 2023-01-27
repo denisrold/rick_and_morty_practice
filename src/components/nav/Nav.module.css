@@ -1,8 +1,21 @@
 .navs{
     height: 60px;
     border:2px blue solid ;
-    background-color: rgb(2, 77, 2);
+    background-color: rgb(255, 255, 255);
     width: 98%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 2px rgb(77, 74, 74);
+}
+
+.buttonNav{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 1px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px black solid;
+    color: black;
 }

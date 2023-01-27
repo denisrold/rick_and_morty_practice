@@ -4,6 +4,7 @@ import Cards from "./components/cards/Cards.jsx";
 import About from "./components/about/About";
 import Details from "./components/detail/Details";
 import Forms from "./components/forms/forms";
+import Favorites from "./components/Favorites/Favorites.jsx";
 import React, { useState, useEffect } from "react";
 
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
@@ -47,7 +48,7 @@ function App() {
   return (
     <div className="App" style={{ padding: "25px" }}>
       <div>{location.pathname !== "/" && <Nav onSearch={onSearch} />}</div>
-      <hr />
+
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <Routes>
           <Route path="/" element={<Forms login={login} />} />
@@ -58,6 +59,7 @@ function App() {
 
           <Route path="About" element={<About />} />
           <Route path="detail/:detailId" element={<Details />} />
+          <Route path="Favorites" element={<Favorites />}></Route>
         </Routes>
       </div>
       <hr />
@@ -66,6 +68,3 @@ function App() {
 }
 
 export default App;
-
-/*
- */
