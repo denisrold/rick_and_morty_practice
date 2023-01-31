@@ -1,5 +1,6 @@
 .divs{
 display: grid;
+margin-left: 25px;
 width: fit-content;
 height: 900px;
 grid-template-columns: repeat(5, 230px);

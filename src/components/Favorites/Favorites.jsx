@@ -51,9 +51,7 @@ const allFav = (event)=>{
    }
     </div>;  
     </div>
-             <div className={styles.buttonHome}>
-        <Link to="/home" className={styles.link}>Go Home</Link>
-    </div> 
+
   </div>
 )
 }

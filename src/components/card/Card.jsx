@@ -31,22 +31,22 @@ import sinstar2 from"./sinstar2.png"
 
 
    return (
-      <div className={styles.container}>
+      <div className={styles.container} style={{ 
+         backgroundImage: `url(${props.image})` 
+       }}>
+          
+            <h3 className={styles.number}>{props.id}</h3>
             <button className={styles.cerrar} onClick={props.onClose}>X</button>
-            <h2 className={styles.name} >{props.name}</h2>
-            <img className={styles.imagen} src={props.image} alt={props.name}></img>
-            <div>
+          
+            <div className={styles.otros}>
             {isFav? (<img src={star2} onClick={handleFavorite} className={styles.favs}/>) : (
-            <img src={sinstar2} onClick={handleFavorite} className={styles.favs}/>)}
+               <img src={sinstar2} onClick={handleFavorite} className={styles.favs}/>)}
             <Link to={`/detail/${props.id}`} className={styles.links}>
             <img src={info} className={styles.info}/>
             </Link >
             </div>
-            <hr></hr>
-         <div className={styles.data}>
-            <h2>{props.species}</h2>
-            <h2>{props.gender}</h2>
-         </div>      
+   
+               <h2 className={styles.name} >{props.name}</h2>
       </div>
    );
 }
