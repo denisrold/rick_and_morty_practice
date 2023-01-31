@@ -1,7 +1,7 @@
 .navs{
     height: 60px;
-    border:2px blue solid ;
-    background-color: rgb(255, 255, 255);
+    border:2px rgb(87, 87, 88) solid ;
+    background-image: linear-gradient(rgb(90, 89, 89), rgb(194, 190, 190));
     width: 98%;
     margin-left: auto;
     margin-right: auto;

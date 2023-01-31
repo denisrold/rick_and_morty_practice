@@ -1,8 +1,26 @@
 .forms{
-    border:2px blue solid;
+    border:2px rgb(63, 63, 63) solid;
+    border-radius: 10px;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom,rgb(137, 135, 135),rgb(208, 208, 208));
 }
 
 .errors {
 color:red;
 font-style: italic;
+}
+.buttons{
+    background-image: linear-gradient(grey,lightgrey);
+    border-radius: 5px;
+    border: 1.5px grey solid;
+    scale:1.1;
+    transition: 0.5;
+}
+.buttons:hover{
+scale: 0.95;
+}
+
+.labels{
+    font-size: 14px;
+    font-weight: bold;
 }

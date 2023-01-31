@@ -32,15 +32,15 @@ const Forms = (props) =>{
 return(
     <div className={Style.forms}>
         <form onSubmit={handleSubmit}>
-            <label>Username:</label>
-            <input type="text" name="username" value={userData.username} onChange={handleInputChange}></input>
+            <label className={Style.labels}>Username:  </label>
+            <input type="text" name="username" value={userData.username} onChange={handleInputChange} className={Style.input}></input>
             <p className={Style.errors}>{errors.username? errors.username : null}</p>
             
-            <label>Password:</label>
-            <input type="password" name="password" value={userData.password} onChange={handleInputChange}></input>
+            <label className={Style.labels}>Password:  </label>
+            <input type="password" name="password" value={userData.password} onChange={handleInputChange} className={Style.input}></input>
             <p className={Style.errors}>{errors.password? errors.password : null}</p>
 
-            <button type="submit">Login</button>
+            <button type="submit" className={Style.buttons}>Login</button>
         </form>
     </div>)
 }

@@ -1,7 +1,8 @@
-import styles from"./Favorites.modules"
 import { connect} from 'react-redux';
-import Card from "../card/Card";
 import { orderCards, filterCards, allFavs } from "../redux/actions"; 
+import styles from"./Favorites.module.css";
+import Favorite from '../Favorite/Favorite';
+import {Link} from"react-router-dom"
 
 const Favorites =(props) => {
 
@@ -15,11 +16,10 @@ const allFav = (event)=>{
   props.allFavs(event.target.value)
 } 
   return (
-    <>
     <div>
-    <button onClick={allFav}>Ver todos</button>
-    <hr />
-      <span>Orden: </span>
+
+    <div>
+    <span>Orden: </span>
     <select onChange={orderCard}>
     <option value="Ascendente">Ascendente</option>
     <option value="Descendente">Descendente</option>
@@ -31,24 +31,40 @@ const allFav = (event)=>{
     <option value="Genderless">Genderless</option>
     <option value="unknown">unknown</option>
     </select>
+    <button onClick={allFav} className={styles.buttons}>Ver todos</button>
     </div>
-    <div className={styles.divs}> {
+
+    <div>
+    <div className={styles.favorites}> {
       props.myFavorites.map(({id, name, species, gender, image}) => {
-        return <Card
-         key={id}
-         name={name}
-         species={species}
-         gender={gender}
-         image={image}
+        return (
+        <Favorite
+        key={id}
          id={id}
+         name={name}
+         species={species} 
+         gender={gender}
+         image={image} 
         />
+        )
       })
    }
-   </div>;
-
-    </>
+    </div>;  
+    </div>
+             <div className={styles.buttonHome}>
+        <Link to="/home" className={styles.link}>Go Home</Link>
+    </div> 
+  </div>
 )
 }
+
+
+
+
+
+
+
+
 
 export const mapStateToProps = (state)=>{
     return {myFavorites: state.myFavorites,

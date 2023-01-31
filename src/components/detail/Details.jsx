@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import {useParams} from "react-router-dom"
 import{ Link } from"react-router-dom"
+import styles from"./Details.module.css"
 const Details = ()=>{
     const { detailId } = useParams();
     const [character, setCharacter] = useState({}); 
@@ -22,14 +23,31 @@ const Details = ()=>{
       }, [detailId]);
  return (
     <div>
-        <Link to="/home">Home</Link>
-        <h1>{character?.name}</h1>
-        <p>{character?.status}</p>
-        <p>{character?.species}</p>
-        <p>{character?.gender}</p>
-        <p>{character?.origin?.name}</p>
-        <img src={character?.image} alt=""/>
+      
+      <div className={styles.contains}>
+
+        <div className={styles.name}>
+          <h1>Nombre: {character?.name}</h1>
+        </div>
+        <div className="style.imageConteiner">
+          <img src={character?.image} alt="imagen" className={character?.status == "Dead"? styles.dead:styles.image}/>
+        </div>
+      
+        <div className={styles.status}>
+          <p>Especie: {character?.species}</p>
+          <p>Genero: {character?.gender}</p>
+          <p>Estado: {character?.status}</p>
+        </div>
+
+        <div className={styles.origin}>
+          <p>{character?.origin?.name}</p>
+        </div>
     </div>
+    <div className={styles.buttonHome}>
+        <Link to="/home" className={styles.link}>Go Home</Link>
+    </div>
+    </div>
+
  )   
 } 
 

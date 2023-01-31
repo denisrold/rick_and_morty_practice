@@ -62,7 +62,6 @@ function App() {
           <Route path="Favorites" element={<Favorites />}></Route>
         </Routes>
       </div>
-      <hr />
     </div>
   );
 }

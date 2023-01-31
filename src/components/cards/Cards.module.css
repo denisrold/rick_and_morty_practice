@@ -1,6 +1,9 @@
 .divs{
-border: 3px red solid;
-display: flex;
-justify-content: space-evenly;
+display: grid;
+width: fit-content;
+height: 900px;
+grid-template-columns: repeat(5, 230px);
+grid-template-rows: repeat(2, 400px);
+padding: 0.8rem;
 }
 
