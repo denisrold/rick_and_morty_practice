@@ -56,20 +56,38 @@
         }
         .buttons1{
            
-            background-color: rgba(128, 128, 128, 0.043);
+    
             margin-top: 15px;
             width: 150px;
             height: 20px;
             display: inline;
            margin-left: 25px;
-           border: 1px rgba(73, 73, 73, 0) solid;
-           box-shadow: 0 0 1px 0.5px rgb(148, 148, 148);
+           border: 0.1px rgba(255, 255, 255, 0) solid;
+
            border-radius: 8px;
            transition: 0.3s;
            font-weight: bolder;
         }
 
         .buttons1:hover{
-            scale: 1.1;
-            box-shadow: 0 0 6px 1px rgb(148, 148, 148);
+            border: 0.01px rgb(131, 129, 129) solid ;
+            background-image: linear-gradient(to bottom , rgba(148, 151, 148, 0.66), rgba(221, 221, 221, 0.468));
+            box-shadow: 0 0 5px 1px rgb(118, 118, 118);   
+            filter: brightness(1.2);
+            scale: 1;
+            box-shadow: 0 0 5px 1px rgba(158, 158, 158, 0.753);
+        }
+        .buttons1:active{
+            box-shadow:inset 0 0 5px 1px rgb(118, 118, 118);
+        }
+
+        .selector{
+            border: 0px black;
+            outline: none;
+            transition: 0.7s;
+        }
+        .selector:hover{
+            box-shadow: 0 0 5px 1px rgb(118, 118, 118);
+   
+            filter: brightness(1.2);
         }

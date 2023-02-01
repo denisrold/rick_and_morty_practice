@@ -12,7 +12,7 @@ const About = () => {
     return(
     <div>
         <h1>Esta es la app de Rick and Morty collections.</h1>
-        <h2>by Denis H. Roldán - fullStackDeveloper: inProgress</h2>
+        <h2>by Denis H. Roldán - fullStackDeveloper: inProgress.</h2>
         <hr/>
         <h3>Datos de interes - contacto:</h3>
         <div className={styles.divs}>
@@ -27,11 +27,6 @@ const About = () => {
         <hr/>
 
         <h3>Practica de React-Redux | modulo 2 | soyHenry</h3>
-        <hr/>
-        
-        <h3 className={styles.disfrutes}>Que lo disfrutes!</h3>
-
-
         <div className={styles.buttonHome}>
         <Link to="/home" className={styles.link}>Go Home</Link>
         </div>

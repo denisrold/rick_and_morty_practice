@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgba(178, 178, 164, 0.279);
+ background-image: url(../img/simple-white-background-with-smooth-lines-light-colors_476363-5558.avif);
+background-size: cover;
 }
 
 code {

@@ -112,6 +112,7 @@ cursor: default;
         background-color: rgba(69, 255, 1, 0.324);
         filter: saturate(0.7);
     }
+    .info:active{scale: 0.7;}
 
 .favs{
         margin-bottom: 5px;
@@ -131,6 +132,7 @@ cursor: default;
             background-color: rgba(255, 255, 1, 0.324);
             filter: saturate(0.7);
         }
+        .favs:active{scale: 0.7;}
 
         .otros{
          display: flex;
