@@ -37,6 +37,7 @@ const Details = ()=>{
           <p>Especie: {character?.species}</p>
           <p>Genero: {character?.gender}</p>
           <p>Estado: {character?.status}</p>
+          <p>ID: {character?.id}</p>
         </div>
 
         <div className={styles.origin}>

@@ -2,7 +2,7 @@
     border: 1.5px rgb(0, 0, 0) solid;
     border-radius: 0.7rem;
     width:200px;
-    height: 270px;
+    height: 238px;
     padding: 0.5rem;
     box-shadow: 5px 5px 12px 2px rgb(22, 21, 21);
     margin-right:20px ;
@@ -10,7 +10,7 @@
     margin-bottom: 16px;
     transition: 0.5s;
     filter: brightness(0.97);
-    background-size: 100% 100%;
+    background-size: 115% 260px;
     }
     .container:hover{
         scale:1.05;
@@ -48,15 +48,16 @@
         color: rgb(244, 242, 242);
         box-shadow: 1px 1px 3px rgb(21, 19, 19);
         opacity: 0.95;
-        scale:0.8;
+        scale:0.9;
         transition: 0.3s;
        
         }
-            button:hover{
-            scale: 0.7;
+            .cerrar:hover{
+            scale: 0.8;
             opacity: 1;
             box-shadow: 0.5px 0.5px 1.5px rgb(21, 19, 19);
             cursor:pointer;
+            
           }
 
 .favs{
@@ -72,8 +73,8 @@ height: 20px;
 
 .name {
 text-align: center;
-margin-top: 56%;
-font-size: 18.5px;
+margin-top: 48%;
+font-size: 18px;
 opacity: 1;
 width: auto;
 cursor: default;
@@ -134,6 +135,6 @@ cursor: default;
         .otros{
          display: flex;
          flex-direction: column;
-         margin-top:30% ;
+         margin-top:21% ;
          margin-right: 10px;
         }

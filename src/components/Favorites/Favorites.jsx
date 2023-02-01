@@ -18,12 +18,14 @@ const allFav = (event)=>{
   return (
     <div>
 
-    <div>
-    <span>Orden: </span>
+    <div className={styles.spans}>
+    <span className={styles.spancito}>Ordenar por ID: </span>
     <select onChange={orderCard}>
     <option value="Ascendente">Ascendente</option>
     <option value="Descendente">Descendente</option>
     </select>
+
+    <span className={styles.spancito}> Ordenar por genero: </span>
     <select onChange={filterCard}>
     <option value="none">Por genero</option>
     <option value="Male">Male</option>
@@ -31,7 +33,7 @@ const allFav = (event)=>{
     <option value="Genderless">Genderless</option>
     <option value="unknown">unknown</option>
     </select>
-    <button onClick={allFav} className={styles.buttons}>Ver todos</button>
+    <button onClick={allFav} className={styles.buttons1}>Ver todos</button>
     </div>
 
     <div>

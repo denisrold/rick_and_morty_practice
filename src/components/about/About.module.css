@@ -1,0 +1,61 @@
+hr{
+    border: 0px black solid;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.logos{
+    width: 10%;
+    cursor:pointer;
+    border-radius: 999px;
+    transition: 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logos:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 6px 1.5px rgb(118, 118, 118);
+    filter: brightness(1.4);
+}
+
+
+
+
+
+
+
+.buttonHome{
+    margin-top: 80px;
+    text-decoration: none;
+    scale: 1.1em;;
+    transition: 1s;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .buttonHome:hover{
+            scale: 0.7;
+            -webkit-transform: rotate(360deg);transform: rotate(360deg);
+            border-radius: 999px;
+    }
+    
+    .link{
+    color:rgb(34, 33, 33);
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px rgba(118, 118, 118, 0.447) solid;
+    border-radius: 999px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-image: linear-gradient(to bottom , rgba(99, 99, 99, 0.575), rgba(178, 178, 178, 0.425));
+    transition: 1s;
+    }
+    .link:hover{
+    border: 0.01px green solid ;
+    background-image: linear-gradient(to bottom , rgba(4, 138, 2, 0.66), rgba(12, 243, 0, 0.468));
+    box-shadow: 0 0 100px 50px rgba(115, 255, 0, 1);
+    background-color: rgba(22, 255, 1, 0.349);
+    filter: brightness(1.2);
+    border-radius: 999px;
+    }
+

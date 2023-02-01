@@ -18,7 +18,7 @@ margin-right: auto;
 color:rgb(34, 33, 33);
 text-decoration: none;
 font-weight: bold;
-border: 1px black solid;
+border: 1px rgba(118, 118, 118, 0.447) solid;
 border-radius: 999px;
 padding-left: 2rem;
 padding-right: 2rem;
@@ -46,6 +46,7 @@ grid-template-rows: repeat(6fr , 1fr);
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 background: url(../../../img/rick-and-morty-wallpaper.jpg);
 transition: 1s;
+filter: saturate(1.1);
 }
 .contains:hover{
 filter: brightness(1.1);
@@ -85,7 +86,7 @@ font-weight: bolder;
 font-size: 18px;
 grid-column: span 2;
 grid-row: span 1;
-margin-top: 25%;
+margin-top: 10%;
 text-justify:distribute;
 
 font-weight: bold;

@@ -42,3 +42,34 @@
         filter: brightness(1.2);
         border-radius: 999px;
         }
+
+        .spans{
+            display: inline-block;
+            height: 20px;
+            margin-right: 20%;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+        .spancito{
+            margin-left: 15px;
+    
+        }
+        .buttons1{
+           
+            background-color: rgba(128, 128, 128, 0.043);
+            margin-top: 15px;
+            width: 150px;
+            height: 20px;
+            display: inline;
+           margin-left: 25px;
+           border: 1px rgba(73, 73, 73, 0) solid;
+           box-shadow: 0 0 1px 0.5px rgb(148, 148, 148);
+           border-radius: 8px;
+           transition: 0.3s;
+           font-weight: bolder;
+        }
+
+        .buttons1:hover{
+            scale: 1.1;
+            box-shadow: 0 0 6px 1px rgb(148, 148, 148);
+        }
