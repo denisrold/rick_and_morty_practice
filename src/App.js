@@ -18,8 +18,12 @@ function App() {
       .then((data) => {
         if (data.name) {
           setCharacters((oldChars) => [...oldChars, data]);
+          let input = document.querySelector("#inputs");
+          input.value = "";
         } else {
-          window.alert("No hay personajes con ese ID");
+          let input = document.querySelector("#inputs");
+          input.value = "";
+          window.alert("No hay personajes con esa ID");
         }
       });
   };

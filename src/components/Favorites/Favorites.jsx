@@ -25,7 +25,7 @@ const allFav = (event)=>{
     <option value="Descendente">Descendente</option>
     </select>
 
-    <span className={styles.spancito}> Ordenar por genero: </span>
+    <span className={styles.spancito}>||  Ordenar por genero: </span>
     <select onChange={filterCard} className={styles.selector}>
     <option value="none">Por genero</option>
     <option value="Male">Male</option>
@@ -51,7 +51,7 @@ const allFav = (event)=>{
         )
       })
    }
-    </div>;  
+    </div>  
     </div>
 
   </div>

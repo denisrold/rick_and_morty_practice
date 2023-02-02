@@ -28,7 +28,7 @@ const About = () => {
 
         <h3>Practica de React-Redux | modulo 2 | soyHenry</h3>
         <div className={styles.buttonHome}>
-        <Link to="/home" className={styles.link}>Go Home</Link>
+        <Link to="/home" className={styles.link}><span className={styles.letras}>Go Home</span></Link>
         </div>
     </div>)
 }

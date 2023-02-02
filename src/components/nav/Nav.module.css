@@ -1,12 +1,12 @@
 .navs{
     height: 63px;
     border:2px rgba(87, 87, 88, 0.13) solid ;
-    background-image: linear-gradient(rgba(113, 112, 112, 0.123), rgba(190, 190, 190, 0.018));
+    background-image: linear-gradient(rgba(113, 112, 112, 0.379), rgba(190, 190, 190, 0.018));
     width: 98%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px 2px rgb(77, 74, 74);
+    box-shadow: 5px 5px 5px 2px rgba(77, 74, 74, 0.208);
     
 }
 
@@ -114,6 +114,7 @@
     }
 
     .about:hover{    
+
         border: 0.01px rgb(131, 129, 129) solid ;
         background-image: linear-gradient(to bottom , rgba(148, 151, 148, 0.66), rgba(221, 221, 221, 0.468));
         box-shadow: 0 0 5px 1px rgb(118, 118, 118);

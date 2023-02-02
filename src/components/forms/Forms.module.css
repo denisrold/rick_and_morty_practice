@@ -10,20 +10,22 @@
 .errors {
 color:red;
 font-style: italic;
+font-size: 12px;
 }
 .buttons{
            
-    background-image: linear-gradient(to bottom , rgba(99, 99, 99, 0.05), rgba(178, 178, 178, 0.037));
+    background-image: linear-gradient(to bottom , rgba(99, 99, 99, 0.027), rgba(178, 178, 178, 0.037));
         margin-top: 15px;
-        width: 150px;
-        height: 20px;
+        width: 80px;
+        height: 25px;
         display: inline;
        
-       border: 1px rgba(73, 73, 73, 0.308) solid;
-       box-shadow: 0 0 1px 0.5px rgb(148, 148, 148);
-       border-radius: 8px;
+       border: 1px rgba(73, 73, 73, 0.018) solid;
+       
+       border-radius: 10px;
        transition: 0.3s;
        font-weight: bolder;
+       font-family: 'Gagalin', sans-serif;
     }
 
     .buttons:hover{

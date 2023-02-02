@@ -55,7 +55,7 @@
     
         }
         .buttons1{
-           
+            font-family: 'Gagalin', sans-serif;
     
             margin-top: 15px;
             width: 150px;
@@ -85,6 +85,7 @@
             border: 0px black;
             outline: none;
             transition: 0.7s;
+            font-family: 'Gagalin', sans-serif;
         }
         .selector:hover{
             box-shadow: 0 0 5px 1px rgb(118, 118, 118);

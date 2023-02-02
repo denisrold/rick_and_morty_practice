@@ -42,9 +42,9 @@ function Favorite({id, name, species, gender, image,deleteFavs}) {
       <h2 className={styles.name} style={{fontSize:fontSize1(name)}}>{name}</h2>
       <img className={styles.imagen} src={image} alt={name}></img>
       <div className={styles.linkes}>
-      <img src={star2} onClick={handleFavorite} className={styles.favs}/>
+      <img src={star2} onClick={handleFavorite} className={styles.favs} alt="star"/>
       <Link to={`/detail/${id}`} className={styles.links}>
-      <img src={info} className={styles.info}/>
+      <img src={info} className={styles.info} alt="info"/>
       </Link >
       </div>
  
