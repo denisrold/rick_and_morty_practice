@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: 'Gagalin', sans-serif;
  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -16,12 +15,11 @@ code {
     monospace;
 }
 .burbuja{
-  
   background: rgba(43, 255, 0, 0.712);
   opacity: 0;
   position: relative;
-  display: flex;
-  top: -150;
+  
+  top: -100;
   border-radius: 50%;
   box-shadow: 0 0 4px 2.5px rgba(0, 193, 0, 0.721),0 0 7px 4px rgba(1, 232, 1, 0.84), 0 0 20px 7px rgba(0, 255, 0, 0.909),0 0 30px rgba(0, 255, 0, 0.909);
   animation: burbujas 3.5s linear infinite;

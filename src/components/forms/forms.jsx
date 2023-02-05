@@ -35,19 +35,19 @@ const Forms = (props) =>{
 return(<div>
     <img src={rickmorty_title} alt="title" className={Style.titulo}></img>
     <div className={Style.openingdiv}>
-    <video src={opening} type="video/mp4" autoPlay="true" className={Style.opening}></video>
+    <video src={opening} type="video/mp4" autoPlay="true" muted="true" className={Style.opening}></video>
     </div>
     <div className={Style.forms}>
         <form onSubmit={handleSubmit}>
             <label className={Style.labels}>Username:  </label>
-            <input type="text" name="username" value={userData.username} onChange={handleInputChange} className={Style.input}></input>
+            <input type="text" name="username" value={userData.username} onChange={handleInputChange} className={Style.input} placeholder="admin@admin.com"></input>
             <p className={Style.errors}>{errors.username? errors.username : null}</p>
             
             <label className={Style.labels}>Password:  </label>
-            <input type="password" name="password" value={userData.password} onChange={handleInputChange} className={Style.input}></input>
+            <input type="password" name="password" value={userData.password} onChange={handleInputChange} className={Style.input} placeholder="33pass"></input>
             <p className={Style.errors}>{errors.password? errors.password : null}</p>
 
-            <button type="submit" className={Style.buttons}>Login</button>
+            <button type="submit" className={Style.buttons} onMouseOver={()=>{}}>Login</button>
         </form>
     </div>
     </div>)

@@ -11,13 +11,19 @@ import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
 function App() {
   const [characters, setCharacters] = useState([]);
-
+  const [crashcharacters, setcrashCharacters] = useState([]);
   const onSearch = (character) => {
     fetch(`https://rickandmortyapi.com/api/character/${character}`)
       .then((response) => response.json())
       .then((data) => {
-        if (data.name) {
+        if (crashcharacters.includes(data.id)) {
+          let input = document.querySelector("#inputs");
+          input.value = "";
+          return window.alert("ya estas visualizando a ese personaje");
+        } else if (data.name) {
           setCharacters((oldChars) => [...oldChars, data]);
+          setcrashCharacters(() => [...crashcharacters, data.id]);
+          console.log(crashcharacters);
           let input = document.querySelector("#inputs");
           input.value = "";
         } else {
@@ -30,6 +36,8 @@ function App() {
 
   const onClose = (id) => {
     setCharacters(characters.filter((character) => character.id !== id));
+
+    setcrashCharacters(crashcharacters.filter((e) => e !== id));
   };
 
   const location = useLocation();
@@ -37,7 +45,7 @@ function App() {
   const navigate = useNavigate();
   const [access, setAccess] = useState(false);
   const username = "admin@admin.com";
-  const password = "1password";
+  const password = "33pass";
 
   function login(userData) {
     if (userData.password === password && userData.username === username) {
