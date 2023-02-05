@@ -1,6 +1,9 @@
 import Style from"./Forms.module.css"
 import { useState } from "react"
 import validation from "./validation"
+import opening from"./opening.mp4"
+import rickmorty_title from"./rickmorty_title.png"
+
 const Forms = (props) =>{
 
     const [userData,setUserData]= useState({
@@ -29,7 +32,11 @@ const Forms = (props) =>{
     const handleSubmit =()=>{
       props.login(userData)  
     }
-return(
+return(<div>
+    <img src={rickmorty_title} alt="title" className={Style.titulo}></img>
+    <div className={Style.openingdiv}>
+    <video src={opening} type="video/mp4" autoPlay="true" className={Style.opening}></video>
+    </div>
     <div className={Style.forms}>
         <form onSubmit={handleSubmit}>
             <label className={Style.labels}>Username:  </label>
@@ -42,6 +49,7 @@ return(
 
             <button type="submit" className={Style.buttons}>Login</button>
         </form>
+    </div>
     </div>)
 }
 

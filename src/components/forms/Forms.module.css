@@ -1,10 +1,14 @@
 .forms{
+    position: relative;
     border:2px rgba(63, 63, 63, 0.055) solid;
     border-radius: 10px;
     padding: 2rem;
-    background-image: linear-gradient(to bottom , rgba(99, 99, 99, 0.05), rgba(178, 178, 178, 0.037));
-
+    background-image: linear-gradient(to bottom , rgb(232, 231, 231),rgba(240, 239, 239, 0.927));
+    width: 300px;
     box-shadow: 0 0 5px 1px rgb(118, 118, 118);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1cm;
 }
 
 .errors {
@@ -44,3 +48,64 @@ font-size: 12px;
     font-weight: bold;
 }
 
+.input{
+    margin-top: 10px ;
+
+    border: 0px black;
+    outline: none;
+    text-align:center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Gagalin', sans-serif;
+}
+
+.inputs:hover{
+    box-shadow: 0 0 5px 1px rgb(118, 118, 118);
+    filter: brightness(1.2);
+}
+
+.opening{
+    position: relative;
+    width: 600px;
+    border-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-image: linear-gradient(to bottom , rgb(232, 231, 231),rgba(240, 239, 239, 0.927));
+    box-shadow:0 0 5px 1px rgb(118, 118, 118);
+}
+
+
+.openingdiv{
+
+animation: opening 264s linear ;
+}
+@keyframes opening{
+    0%{
+    opacity: 1;
+    }
+    11.6%{
+        opacity: 1;
+    }
+    11.7%{opacity: 0;}
+    100%{opacity: 0;}
+}
+.titulo{
+    filter: saturate(1.5);
+    position:absolute;
+    left: 22%;
+    animation: titulo 264s linear ;
+}
+
+@keyframes titulo{
+    0%{
+    opacity: 0;
+    }
+    11.6%{
+        opacity: 0;
+        scale: 0.7;
+    }
+    12%{
+        scale:1;
+        opacity: 1;}
+    100%{opacity: 1;}
+}

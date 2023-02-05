@@ -23,21 +23,21 @@ const Details = ()=>{
       }, [detailId]);
  return (
     <div>
-      
+
       <div className={styles.contains}>
 
         <div className={styles.name}>
           <h1>Nombre: <span className={styles.texts1}>{character?.name}</span></h1>
         </div>
         <div className="style.imageConteiner">
-          <img src={character?.image} alt="imagen" className={character?.status == "Dead"? styles.dead:styles.image}/>
+          <img src={character?.image} alt="imagen" className={character?.status === "Dead"? styles.dead:styles.image}/>
         </div>
       
         <div className={styles.status}>
           <p>Especie: <span className={styles.texts}>{character?.species}</span></p>
           <p>ID: <span className={styles.texts}>{character?.id}</span></p>
           <p >Genero: <span className={styles.texts}>{character?.gender }</span></p>
-          <p>Estado: <span className={character?.status == "Dead"? styles.deadtext:styles.texts}>{character?.status}</span></p>
+          <p>Estado: <span className={character?.status === "Dead"? styles.deadtext:styles.texts}>{character?.status}</span></p>
         </div>
 
         <div className={styles.origin}>
