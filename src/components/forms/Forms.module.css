@@ -9,7 +9,18 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 1cm;
+    animation: greenShadow 5s linear ;
+    animation-fill-mode:forwards;
+    animation-delay: 27s;
 }
+@keyframes greenShadow{
+    0%{}
+
+    100%{
+        border: 0.2px rgba(46, 232, 0, 0.441) solid ;
+        box-shadow: 0 0 50px 3px rgb(46, 232, 0);}
+}
+
 
 .errors {
 color:red;
